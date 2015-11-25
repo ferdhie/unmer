@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/newsitem_margin"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/newsitem_margin"
+        android:layout_marginTop="@dimen/newsitem_margin"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/newsDate"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="yyyy/mm/dd"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/news_image"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/newsDate"
+        android:layout_margin="@dimen/newsitem_margin"
+        android:src="@drawable/ic_launcher"
+        android:background="@color/background_floating_material_light" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/newsitem_margin"
+        android:layout_toRightOf="@+id/news_image"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_title_material"
+            android:id="@+id/newsTitle"
+            android:layout_marginBottom="10dp"
+            android:text="Judul judul judul"/>
+
+        <TextView
+            android:id="@+id/newsText"
+            android:textSize="@dimen/abc_text_size_body_1_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="News content nws content news content"/>
+
+        </LinearLayout>
+
+</RelativeLayout>
